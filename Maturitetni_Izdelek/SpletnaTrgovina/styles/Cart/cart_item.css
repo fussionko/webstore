@@ -1,0 +1,21 @@
+.container-cart-item {
+    display: flex;
+
+    justify-content: space-evenly;
+
+}
+
+.cart-item-picture {
+    align-self: flex-start;
+}
+
+.cart-item-remove {
+    margin-left: auto;
+    width: 28px;
+    height: 28px;
+}
+
+.cart-item-remove img, .cart-item-picture img{
+    width: inherit;
+    height: inherit;
+}

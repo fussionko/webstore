@@ -1,0 +1,29 @@
+PODATKI UPORABLJENIH STORITEV:
+--------------------------------
+XAMPP 7.4.28-1
+PHP 7.4.28
+Apache HTTP Server 2.4.53
+MariaDB 10.4.24  MySQL ver. 15.1
+
+
+NAVODILA
+--------------------------------
+Vse .ini datoteke se najde v mapi: Konfiguracijske_datoteke
+x -> relativna pot
+
+1. Zamenjamo datoteko php.ini v tej mapi z tisto, ki je v XAMPP (x\xampp\php\php.ini)
+2. Zamenjamo datoteko my.ini v tej mapi z tisto, ki je v XAMPP (x\xampp\mysql\data\my.ini)
+3. Zamenjamo datoteko sendmail.ini v tej mapi z tisto, ki je v XAMPP (x\xampp\sendmail\sendmail.ini)
+4. Mapo "Maturitetni_Izdelek kopiramo v x\xampp\htdocs
+
+5. V XAMPP nadzorni plošči zaženemo Apachi strežnik in MySQL strežnik
+6. Odpremo konzolo za MySQL strežniki in vpišemo ukaz mysql --user=root in ustvarimo podatkovno bazo 'webstore_ver9_3'
+   z ukazom "CREATE DATABASE webstore_ver9_3"
+7. Nato vpišemo ukaz exit
+8. Vnesemo ukaz mysql -u root -p webstore_ver9_3 < x\Maturitetni_izdelek_Sebastjan_Vidergar_R4C\webstore.sql
+
+
+ADMINISTRATORSKI RAČUN
+--------------------------------
+uporabniško ime: root
+geslo: Admin123

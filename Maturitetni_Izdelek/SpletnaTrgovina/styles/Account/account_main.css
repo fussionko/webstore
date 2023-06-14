@@ -1,0 +1,47 @@
+#container-middle {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-account-process {
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    align-items: center;
+
+    box-shadow: 5px 10px 18px #888888;
+
+    width: auto;
+    height: auto;
+
+    padding: 0 5em;
+    padding-bottom: auto;
+    box-sizing: border-box;
+}
+
+
+
+.gender-type {
+    display: flex;
+}
+
+#container-gender label{
+    opacity: 1;
+    font-size: 15px;
+    transform: translate(0, 0);;
+}
+
+#container-gender input{
+    align-self: center;
+    height: 1em;
+    width: 1em;
+    opacity: 1;
+}
+
+.gender-type {
+    height: auto;
+}

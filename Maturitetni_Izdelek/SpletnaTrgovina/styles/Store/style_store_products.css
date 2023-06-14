@@ -1,0 +1,22 @@
+.products-display {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    column-gap: .5vw;
+    row-gap: .5vh;
+    border: 1px solid black;
+    margin: 2% 2%;
+    flex-grow: 1;
+    padding: 1%;
+}
+
+.item {
+    border: 1px solid red;
+    width: 180px;
+    height: 250px;
+}
+
+#button-add-to-basket {
+    width: fit-content;
+}

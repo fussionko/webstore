@@ -1,0 +1,138 @@
+#container-middle 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    margin: 0 25vw;
+
+    /*ZACASNO*/
+    min-width: 600px;
+}
+
+.container-component {
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.config-item {
+    display:inline-flex;
+    align-items: center;
+    flex-direction: row;
+
+    width: 100%;
+    min-height: 80px;
+    border-bottom: 2px solid lightgray;
+}
+
+.config-item:last-child{
+
+    border-bottom: none;
+}
+
+.container-header {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    width: 100%;;
+    background-color: #0993f3;
+    height: 35px;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.header-text {
+    padding: 0 5px;
+    font-weight: 800;
+    color: white;
+}
+
+.header-text:nth-child(0)
+{
+    width: 20%;
+}
+
+.header-text:nth-child(1)
+{
+    width: 50%;
+}
+.header-text:nth-child(2)
+{
+    width: 30%;
+}
+
+.config-item-text {
+    padding: 0 5px;
+    font-weight: 600;
+}
+
+.config-add-item {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+    width: 32px;
+    height: 32px;
+
+    opacity: .4;
+    transition: all .3s ease;
+}
+
+.container-select-component {
+
+    position: absolute;
+    left: 50%;
+
+    overflow: hidden;
+}
+
+
+
+#container-config-item-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    margin-top: 20px;
+    
+    width: 100%;
+    height: auto;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+
+.config-item-close {
+    display: none;
+    margin-left: auto;
+    margin-right: 7px;
+
+    width: 21px;
+    height: 21px;
+
+    opacity: .4;
+    transition: all .3s ease;
+     /*https://codepen.io/sosuke/pen/Pjoqqp ZA FILTER*/
+     /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(42deg) brightness(102%) contrast(101%); */
+}
+
+.config-add-item, .config-item-close{
+    cursor: pointer;
+}
+
+.config-add-item:hover, .config-item-close:hover {
+    opacity: 1;
+}
+
+#container-footer-left, #container-footer-middle, #container-footer-right {
+    padding: 10px;
+}
+
+.config-item-id {
+    display: none !important;
+}
+
+/*Za navbar da po delval transition se more z js stima display block pa none*/
